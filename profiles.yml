@@ -1,0 +1,21 @@
+profiles_mysql_config:
+  target: dev
+  outputs:
+    dev:
+      type: mysql
+      server: 127.0.0.1
+      port: 3306 # optional
+      database: dev # optional, should be same as schema
+      schema: dev
+      username: root
+      password: root
+      driver: MySQL ODBC 8.0 ANSI Driver
+    prod:
+      type: mysql
+      server: 127.0.0.1
+      port: 3306 # optional
+      database: prod # optional, should be same as schema
+      schema: prod
+      username: root
+      password: root
+      driver: MySQL ODBC 8.0 ANSI Driver
